@@ -282,8 +282,6 @@ def open_step_editor(index):
             rec_btn_ref[0].config(text="Записать", state="normal")
             tmp_kb.stop()
 
-        nonlocal _step_record_cb_mouse
-        _step_record_cb_mouse = cb_mouse
 
         tmp_kb = keyboard.Listener(on_press=cb_key); tmp_kb.daemon=True; tmp_kb.start()
 
